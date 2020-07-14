@@ -17,6 +17,8 @@ public class JedisPoolTest {
         //2.从连接池中获取连接
         Jedis jedis = jedisPool.getResource();
 
+        System.out.println("hostfix");
+
         //3.测试连接
         System.out.println(jedis.ping());
 
